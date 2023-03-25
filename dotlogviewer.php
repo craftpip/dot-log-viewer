@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * dot log viewer
+ *
+ * Simple solution to view hectic log files.
+ * displays logs in reverse order, easy to navigate
+ */
 class LogsViewer {
     private $paths = [
         './storage/logs',
