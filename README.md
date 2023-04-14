@@ -12,13 +12,13 @@ A simple .log file viewer in php
 - Easy navigation to next and prev logs, no matter how long that string is.
 
 ### Installation
-- Copy the dotlogviewer.php file into your directory
-- Edit the file and set the $paths to your directory
+- Download the dotlogviewer.php file
+- Edit the file to set the `$paths` to your log directories
 ```php
-class LogsViewer {
+class DotLogViewer {
     private $paths = [
-        '../myproject/api/storage/logs', // latest file from this directory will be viewed by default
-        '../anotherproject/laravel/storage/logs',
+        '../my-project/api/storage/logs', // latest file from this directory will be viewed by default
+        '../bananas/app/logs',
     ];
 ... 
 ```
