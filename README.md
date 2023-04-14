@@ -1,6 +1,6 @@
 # dot-log-viewer
 
-![DotLogViewer](logo.png "DotLogViewer" | width=100)
+![DotLogViewer](logo.png | width=100)
 
 No install, just debug it in 1 minute.   
 A simple .log file viewer in php
