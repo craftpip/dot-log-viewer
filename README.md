@@ -1,9 +1,9 @@
 # dot-log-viewer
 
-![DotLogViewer](logo.png | width=100)
-
 No install, just debug it in 1 minute.   
 A simple .log file viewer in php
+### Demo
+[https://craftpip.github.io/dot-log-viewer](https://craftpip.github.io/dot-log-viewer)
 
 ### Features
 - Easy setup, single file, just copy the dotlogviewer.php file in whatever directory.
@@ -20,6 +20,13 @@ class LogsViewer {
         '../myproject/api/storage/logs', // latest file from this directory will be viewed by default
         '../anotherproject/laravel/storage/logs',
     ];
+... 
 ```
 - open dotlogviewer.php in your browser with apache
 - or create a local server `php -S localhost:8080` and open [http://localhost:8080/dotlogviewer.php](http://localhost:8080/dotlogviewer.php)
+
+
+###  License
+
+Copyright (C) 2023 Boniface Pereira   
+Licensed under the MIT license.
