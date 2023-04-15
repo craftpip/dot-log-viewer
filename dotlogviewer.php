@@ -13,8 +13,8 @@
  */
 class DotLogViewer {
       private $paths = [
-          'test/logs/',
-          'test/anotherfolder/',
+          'test/logs',
+          'test/anotherfolder',
       ];
       private $logs = [];
       private $file;
