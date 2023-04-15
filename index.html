@@ -24,7 +24,7 @@
 
         iframe {
             width: 100%;
-            height: 500px;
+            /*min-height: 400px;*/
             background-color: white;
             /*border-radius: 10px;*/
         }
@@ -106,7 +106,7 @@
     </div>
 </div>
 <script>
-
+    document.getElementsByTagName('iframe')[0].height = window.innerHeight - document.getElementsByTagName('iframe')[0].offsetTop - 10;
 </script>
 </body>
 </html>
