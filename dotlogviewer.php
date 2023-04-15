@@ -13,9 +13,8 @@
  */
 class DotLogViewer {
       private $paths = [
-          '../gitftp/api/storage/logs',
-          '../craftpip.com/api/storage/logs',
-          //        '../gitftp/api/storage/logs2',
+          'test/logs/',
+          'test/anotherfolder/',
       ];
       private $logs = [];
       private $file;
