@@ -9,7 +9,7 @@
  * @link    https://github.com/craftpip/dot-log-viewer
  * @author  Boniface Pereira
  * @license MIT
- * @version 1.0.1
+ * @version 1.0.2
  */
 class DotLogViewer {
       private $paths = [
@@ -336,7 +336,7 @@ DotLog $selectedFile
         </span>
         <span style='
     float:right;'>
-            DotLogViewer v1.0.1 @ Boniface Pereira
+            DotLogViewer v1.0.2 @ Boniface Pereira
         </span>
     </div>
 </body>
