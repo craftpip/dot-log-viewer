@@ -263,7 +263,10 @@ DotLog $selectedFile
             let p = new URLSearchParams(window.location.search);
             console.log(btoa(l));
             p.set('l', btoa(l));
-            let a = window.location.href.substr(0, window.location.href.indexOf('?'));
+            let a = window.location.href;
+            if(window.location.href.indexOf('?') != -1){
+               a = window.location.href.substr(0, window.location.href.indexOf('?'));
+            }
             window.prompt('Direct link for this log:', a + '?' + p.toString());
        });
        $('.nn').click(function(){
