@@ -46,8 +46,12 @@ class DotLogViewer {
                   echo 'No log files found';
                   die;
             }
-
-            $selectedFile = isset($_GET['file']) && $_GET['file'] ? $_GET['file'] : $this->logs[0];
+            $selectedFile = '';
+            if (isset($_GET['v']) && $_GET['v']) {
+                  $selectedFile = base64_decode($_GET['v']);
+            }
+            if (!$selectedFile)
+                  $selectedFile = $this->logs[0];
             if (!in_array($selectedFile, $this->logs)) {
                   echo 'Invalid log file path';
                   die;
@@ -68,6 +72,8 @@ class DotLogViewer {
             $logs = array_reverse($logs);
             $total = count($logs);
             $logsHtml = '';
+
+
             foreach ($logs as $k => $l) {
                   $lineNo = $total - $k;
                   $indx = $k + 1;
@@ -76,26 +82,28 @@ class DotLogViewer {
                   //            $line = htmlentities($line);
                   $line = htmlspecialchars($line);
                   $title = substr($line, 21, 100);
+                  $datetime = substr($line, 1, 19);
                   //            $title = substr($line, 21, strpos($line, "\n"));
                   $er = substr($title, 0, strpos($title, ':'));
                   $title = substr($title, strpos($title, ':') + 2);
                   $er = strtolower(substr($er, strpos($er, '.') + 1));
-
+                  $erUp = strtoupper($er);
                   $logsHtml .= "
-<div class='log $expanded' indx='$indx'>
+<div class='log' indx='$indx' data-line='$lineNo'>
     <div class='log-t'>
         <span class='ln'>
             # $lineNo
+        </span>
+        <span>
+            $datetime
+        </span>
+        <span class='ie $er'>
         </span>
         <span class='log-t-buttons'>
             <button class='np'>newer</button>
             <button class='nn'>older</button>
         </span>
-        <span>
-            $er
-        </span>
-        <span class='ie $er'>
-        </span>
+            <span class='sh' data-line='$lineNo'>&nearr;</span>
         <span class='tt'>
             $title
         </span>
@@ -106,6 +114,13 @@ class DotLogViewer {
 </div>
             ";
             }
+
+            $hiLine = '0';
+            if (isset($_GET['l']) && $_GET['l']) {
+                  $hiLine = base64_decode($_GET['l']);
+            }
+            //            echo $hiLine;
+            //            die;
 
             $selectHtml = "";
             $selectHtml .= "
@@ -137,15 +152,16 @@ DotLog $selectedFile
     width: 10px;
     display: inline-block; 
     border-radius: 50px;
-    margin-right: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .ie.error{
-    background: crimson;
+    background: red;
 }
 .ie.info{
     background: dodgerblue; 
 }
-.ie.warning{
+.ie.warning, .ie.warn{
     background: orange;
 }
     .logs .log .log-t{
@@ -162,12 +178,30 @@ DotLog $selectedFile
         background: #f1f1f1 !important;
     }
     .logs .log .log-t .ln{
-        min-width: 200px;
+        min-width: 50px;
+        display: inline-block;
+    }
+    .logs .log .log-t .ln + span{
+        min-width: 110px;
         display: inline-block;
     }
     .tt{
         min-width: 200px;
         display: inline-block;
+        cursor: pointer;
+        user-select: none;
+    }
+    .tt:hover{
+      background: lightgoldenrodyellow;
+    }
+    .sh{
+        display: inline-block;
+        cursor: pointer;
+        user-select: none;
+        padding: 0 5px;
+    }
+    .sh:hover{
+      background: #ddd;
     }
     .logs .log .log-t > span{
             vertical-align: middle;
@@ -203,6 +237,9 @@ DotLog $selectedFile
         z-index: 2;
         right: 8px;
     }
+    .hl .log-t{
+      background-color: lightblue !important;
+    }
 </style>
 <script
   src='https://code.jquery.com/jquery-3.6.4.min.js'
@@ -212,8 +249,7 @@ DotLog $selectedFile
   $(() => {
        $('.f').change(function(a){
            let s=  $(this).val();
-           console.log(s);
-           location.search = '?file=' + encodeURIComponent(s);
+           location.search = '?v=' + encodeURIComponent(btoa(s));
        })
        $('.f').val('$selectedFile');
        $('.top-right').show();
@@ -221,6 +257,14 @@ DotLog $selectedFile
            $(this).parents('.log').toggleClass('ex');
 //           if(!$(this).parents('.log').hasClass('ex')){
 //           }
+       });
+       $('.sh').click(function(){
+            let l = $(this).attr('data-line');
+            let p = new URLSearchParams(window.location.search);
+            console.log(btoa(l));
+            p.set('l', btoa(l));
+            let a = window.location.href.substr(0, window.location.href.indexOf('?'));
+            window.prompt('Direct link for this log:', a + '?' + p.toString());
        });
        $('.nn').click(function(){
             // next
@@ -253,12 +297,21 @@ DotLog $selectedFile
                 $('html,body').scrollTop(a);
             }
        }
+       
+       if($hiLine){
+            $('[data-line=$hiLine] .tt').click();
+            a($('[data-line=$hiLine]').offset().top, true);
+            $('[data-line=$hiLine]').addClass('hl');
+           
+       }else{
+            $('[data-line]').eq(0).find('.tt').click()
+       }
   });
 </script>
 <body>
     <div class='top-right'>
     <span class='fn'>
-    <button type='button' class='c'>collapse</button>
+    <button type='button' class='c'>expand all</button>
 </span>
         <select name='file' class='f'>
         $selectHtml
@@ -267,10 +320,21 @@ DotLog $selectedFile
     <div class='logs'>
        $logsHtml
     </div>
-    <div style='padding: 100px 0 48px 400px;font-size: 14px;'>
-        <em>
-        Thats all
-        </em>
+    <div style='padding: 208px 10px 10px;
+    font-size: 14px;
+    color: #aaa;'>
+        <span style='color: #444;
+    display: inline-block;
+    transform: translate(93px, -100px);
+    font-size: 16px;'>
+            <em>
+                  End Of File
+            </em>
+        </span>
+        <span style='
+    float:right;'>
+            DotLogViewer v1.0.1 @ Boniface Pereira
+        </span>
     </div>
 </body>
 </html>
