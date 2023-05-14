@@ -9,7 +9,7 @@
  * @link    https://github.com/craftpip/dot-log-viewer
  * @author  Boniface Pereira
  * @license MIT
- * @version 1.0.0
+ * @version 1.0.1
  */
 class DotLogViewer {
       private $paths = [
