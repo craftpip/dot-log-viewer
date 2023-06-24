@@ -326,13 +326,14 @@ DotLog $selectedFile
     <div style='padding: 208px 10px 10px;
     font-size: 14px;
     color: #aaa;'>
-        <span style='color: #444;
+        <span style='
+    color: #444;
     display: inline-block;
-    transform: translate(93px, -100px);
-    font-size: 16px;'>
-            <em>
-                  End Of File
-            </em>
+    transform: translate(387px, -198px);
+    font-size: 14px;'>
+            <span style='font-family:consolas,monospace;color: #aaa'>
+                  ------- end of file -------
+            </span>
         </span>
         <span style='
     float:right;'>
