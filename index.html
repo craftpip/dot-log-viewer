@@ -96,17 +96,23 @@
                 <a href="https://github.com/craftpip/dot-log-viewer">View on Github</a> &nbsp;-&nbsp;
                 <a href="https://github.com/craftpip/dot-log-viewer/blob/main/dotlogviewer.php">Get dotlogviewer.php</a> &nbsp;-&nbsp;
                 <a href="https://github.com/craftpip/dot-log-viewer#installation">Installation</a> &nbsp;-&nbsp;
-                <a href="https://its.boniface.pe/dot-log-viewer/dotlogviewer.php" target="_blank">Demo in new tab</a>
-            </p>
+                <a href="https://dotlogviewer.craftpip.com/dotlogviewer.php" target="_blank">Demo in new tab</a>
+            </p> 
         </div>
         <div class="col-12 col-offset-1">
-            <iframe src="https://its.boniface.pe/dot-log-viewer/dotlogviewer.php"
+            <iframe src=""
+                    id="iframe"
                     frameborder="0"></iframe>
         </div>
     </div>
 </div>
 <script>
     document.getElementsByTagName('iframe')[0].height = window.innerHeight - document.getElementsByTagName('iframe')[0].offsetTop - 10;
+    if(window.location.href.indexOf('github.io') != -1){
+        document.getElementById('iframe').src = 'https://dotlogviewer.craftpip.com/dotlogviewer.php';
+    }else{
+        document.getElementById('iframe').src = './dotlogviewer.php';
+    }
 </script>
 </body>
 </html>
