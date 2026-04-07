@@ -1,0 +1,5 @@
+[2024-01-15 12:15:22] production.WARNING: Memory usage high at 85%
+Previous usage: 512MB
+Current usage: 850MB
+#0 /var/www/html/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php(145)
+#1 /var/www/html/app/Http/Middleware/MemoryMonitor.php(42)

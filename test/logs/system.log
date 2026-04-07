@@ -1,0 +1,5 @@
+[2024-01-15 11:45:30] production.ERROR: Database connection failed
+SQLSTATE[HY000] [2002] Connection refused
+#0 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(68)
+#1 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(54)
+#2 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(139)

@@ -14,7 +14,7 @@
 class DotLogViewer {
       private $paths = [
           'test/logs',
-          'test/storage',
+          'test/app-logs',
       ];
       private $logs = [];
       private $file;

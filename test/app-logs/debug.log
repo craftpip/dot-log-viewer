@@ -1,0 +1,7 @@
+[2024-01-15 14:30:10] production.DEBUG: Request processed
+Method: GET
+Path: /api/users
+Duration: 245ms
+Memory: 12.5MB
+#0 /var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php(1042)
+#1 /var/www/html/app/Http/Controllers/Api/UserController.php(45)
