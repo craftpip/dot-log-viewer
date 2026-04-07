@@ -1,5 +1,78 @@
 [2024-01-15 12:15:22] production.WARNING: Memory usage high at 85%
 Previous usage: 512MB
 Current usage: 850MB
+Threshold: 1GB
 #0 /var/www/html/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php(145)
 #1 /var/www/html/app/Http/Middleware/MemoryMonitor.php(42)
+
+[2024-01-15 12:20:10] production.WARNING: Disk space low
+Used: 85%
+Path: /var/www/html/storage/logs
+
+[2024-01-15 12:30:45] production.WARNING: CPU usage spike detected
+Current: 92%
+Previous average: 45%
+
+[2024-01-15 12:45:00] production.WARNING: Queue backing up
+Jobs pending: 150
+Worker: default
+
+[2024-01-15 13:00:22] production.WARNING: Slow request detected
+URL: /api/reports/generate
+Time: 15.2s
+
+[2024-01-15 13:15:30] production.WARNING: Session store full
+Keys: 10,000
+Max: 10,000
+
+[2024-01-15 13:30:45] production.WARNING: API rate limit approaching
+Requests: 95/100
+Window: 1 minute
+
+[2024-01-15 13:45:00] production.WARNING: File upload size limit
+File: report.pdf
+Size: 50MB
+Limit: 10MB
+
+[2024-01-15 14:00:15] production.WARNING: Deprecated function used
+Function: mysql_connect
+Replacement: mysqli_connect
+
+[2024-01-15 14:15:30] production.WARNING: Third party API slow
+Service: payment-gateway
+Response time: 8.2s
+
+[2024-01-15 14:30:45] production.WARNING: SSL certificate expiring
+Domain: example.com
+Days remaining: 14
+
+[2024-01-15 14:45:00] production.WARNING: Maintenance mode enabled
+Scheduled: 2024-01-16 02:00
+
+[2024-01-15 15:00:22] production.WARNING: Log file growing
+Path: storage/logs/app.log
+Size: 150MB
+
+[2024-01-15 15:15:45] production.WARNING: Database table not indexed
+Table: visits
+Query time: 5.3s
+
+[2024-01-15 15:30:00] production.WARNING: Job retry attempt 3/5
+Job: ProcessImage
+Error: File not found
+
+[2024-01-15 15:45:30] production.WARNING: Concurrent user limit
+Active: 95/100
+
+[2024-01-15 16:00:15] production.WARNING: Cache miss rate high
+Hits: 1,234
+Misses: 5,678
+
+[2024-01-15 16:15:45] production.WARNING: Email queue building
+Pending: 45
+Last sent: 10 minutes ago
+
+[2024-01-15 16:30:22] production.CRITICAL: Out of memory
+Available: 0MB
+Requested: 256MB
+#0 /var/www/html/vendor/laravel/framework/src/Illuminate/Support/Facades/Log.php(104)

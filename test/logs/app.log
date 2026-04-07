@@ -2,3 +2,25 @@
 #0 /var/www/html/index.php(12)
 #1 /var/www/html/bootstrap/app.php(25)
 #2 /var/www/html/public/index.php(14)
+
+[2024-01-15 10:25:12] production.INFO: User logged in successfully
+User ID: 42
+IP: 192.168.1.105
+#0 /var/www/html/app/Http/Controllers/Auth/LoginController.php(34)
+#1 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(56)
+
+[2024-01-15 10:30:45] production.WARNING: Slow query detected
+Query: SELECT * FROM users WHERE active = 1
+Time: 2.3s
+#0 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(412)
+
+[2024-01-15 11:45:30] production.ERROR: Database connection failed
+SQLSTATE[HY000] [2002] Connection refused
+#0 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(68)
+#1 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(54)
+#2 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(139)
+
+[2024-01-15 12:05:22] production.ERROR: Failed to send email
+Swift_TransportException: Connection could not be established
+#0 /var/www/html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/SmtpTransport.php(148)
+#1 /var/www/html/app/Mail/UserWelcome.php(22)

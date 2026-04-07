@@ -1,5 +1,30 @@
+[2024-01-15 10:15:30] production.INFO: Server health check passed
+CPU: 45%
+Memory: 512MB / 2GB
+Disk: 45%
+
+[2024-01-15 10:30:15] production.WARNING: High memory usage detected
+Current: 1.8GB / 2GB
+PID: 4521
+#0 /var/www/html/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php(145)
+
+[2024-01-15 11:00:00] production.INFO: Scheduled task completed
+Task: cleanup_old_sessions
+Rows deleted: 1,234
+#0 /var/www/html/ artisan(42)
+
 [2024-01-15 11:45:30] production.ERROR: Database connection failed
 SQLSTATE[HY000] [2002] Connection refused
+Host: localhost
+Port: 3306
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(68)
 #1 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(54)
 #2 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(139)
+
+[2024-01-15 12:20:45] production.ERROR: Redis connection timeout
+Connection refused: tcp://127.0.0.1:6379
+#0 /var/www/html/vendor/predis/predis/src/Client.php(89)
+
+[2024-01-15 13:00:00] production.INFO: Cache cleared successfully
+Driver: redis
+Keys deleted: 5,432

@@ -1,7 +1,134 @@
-[2024-01-15 14:30:10] production.DEBUG: Request processed
+[2024-01-15 10:00:00] production.DEBUG: Starting request
+Method: GET
+URI: /home
+IP: 192.168.1.100
+
+[2024-01-15 10:00:01] production.DEBUG: Route matched
+Controller: HomeController@index
+Middleware: web,auth
+
+[2024-01-15 10:00:01] production.DEBUG: Query executed
+SQL: select * from users where id = 1
+Time: 0.5ms
+
+[2024-01-15 10:00:02] production.DEBUG: View rendered
+View: home.index
+Time: 12ms
+
+[2024-01-15 10:00:02] production.DEBUG: Response sent
+Size: 15.2KB
+Time: 45ms
+
+[2024-01-15 10:15:30] production.DEBUG: API Request started
+Endpoint: /api/users
+Method: GET
+
+[2024-01-15 10:15:31] production.DEBUG: Authentication success
+User ID: 42
+Token: eyJ0eXAi...
+
+[2024-01-15 10:15:31] production.DEBUG: Database query
+Table: users
+Rows returned: 25
+
+[2024-01-15 10:15:32] production.DEBUG: Response prepared
+Format: JSON
+Size: 4.5KB
+
+[2024-01-15 10:30:45] production.DEBUG: Background job started
+Job: SendEmail
+Queue: default
+
+[2024-01-15 10:30:46] production.DEBUG: Email prepared
+To: user@example.com
+Subject: Welcome!
+
+[2024-01-15 10:30:47] production.DEBUG: Email sent
+Provider: SMTP
+Message ID: <abc123@example.com>
+
+[2024-01-15 10:45:00] production.DEBUG: File uploaded
+File: avatar.jpg
+Size: 2.3MB
+
+[2024-01-15 10:45:01] production.DEBUG: Image processed
+Width: 800px
+Height: 600px
+
+[2024-01-15 11:00:00] production.DEBUG: Cache set
+Key: user:42:profile
+TTL: 3600s
+
+[2024-01-15 11:00:01] production.DEBUG: Session updated
+User ID: 42
+Data: {"last_activity": 1705316401}
+
+[2024-01-15 11:15:30] production.DEBUG: WebSocket connected
+Channel: notifications
+Client: abc123
+
+[2024-01-15 11:15:45] production.DEBUG: Event dispatched
+Event: UserLoggedIn
+Listeners: 2
+
+[2024-01-15 11:30:00] production.DEBUG: Form validation passed
+Fields: email, name, password
+Errors: 0
+
+[2024-01-15 11:30:01] production.DEBUG: Record created
+Table: users
+ID: 156
+
+[2024-01-15 11:45:30] production.DEBUG: File downloaded
+File: report-2024.pdf
+Size: 5.2MB
+
+[2024-01-15 12:00:00] production.DEBUG: Request processed
 Method: GET
 Path: /api/users
 Duration: 245ms
 Memory: 12.5MB
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php(1042)
 #1 /var/www/html/app/Http/Controllers/Api/UserController.php(45)
+
+[2024-01-15 12:15:22] production.DEBUG: Scheduled task running
+Task: GenerateReports
+
+[2024-01-15 12:15:30] production.DEBUG: Report generated
+Type: monthly
+Format: PDF
+
+[2024-01-15 12:15:45] production.DEBUG: Report saved
+Path: storage/reports/monthly.pdf
+
+[2024-01-15 12:30:00] production.DEBUG: External API called
+Service: stripe
+Endpoint: /v1/charges
+
+[2024-01-15 12:30:01] production.DEBUG: Payment processed
+Amount: $49.99
+Status: succeeded
+
+[2024-01-15 12:45:30] production.DEBUG: Search executed
+Query: "laravel tutorial"
+Results: 145
+
+[2024-01-15 13:00:00] production.DEBUG: Export started
+Format: CSV
+Records: 10,000
+
+[2024-01-15 13:00:15] production.DEBUG: Export completed
+File: export-1705316400.csv
+Size: 2.3MB
+
+[2024-01-15 13:15:45] production.DEBUG: Import started
+File: users.csv
+Rows: 500
+
+[2024-01-15 13:16:00] production.DEBUG: Import completed
+Imported: 500
+Skipped: 3
+
+[2024-01-15 13:30:00] production.DEBUG: Data synced
+Source: external-api
+Records: 1,234
