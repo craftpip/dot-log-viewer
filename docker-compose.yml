@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  dotlogviewer:
+    image: php:apache
+    network_mode: bridge
+    tty: true
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - 6011:80
+    restart: "always"
+    deploy:
+      resources:
+        limits:
+          memory: 500M
