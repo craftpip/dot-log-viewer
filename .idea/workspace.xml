@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c7f1ed27-0505-4292-b75b-270720e4a3ff" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.2" />
+  <component name="ProjectId" id="2NWcXF6LkX9lFPp07k4fYqHPxXy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bonifacepereira/Documents/htdocs/dot-log-viewer&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.PHP&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$/test/logs" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/logs" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7f1ed27-0505-4292-b75b-270720e4a3ff" name="Changes" comment="" />
+      <created>1679783316069</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679783316069</updated>
+      <workItem from="1679783317901" duration="1606000" />
+      <workItem from="1679785840449" duration="1497000" />
+      <workItem from="1679808975446" duration="359000" />
+      <workItem from="1679809521296" duration="1676000" />
+      <workItem from="1679853556710" duration="113000" />
+      <workItem from="1679856934653" duration="1866000" />
+      <workItem from="1680103060386" duration="1096000" />
+      <workItem from="1681238864896" duration="1176000" />
+      <workItem from="1681315468561" duration="125000" />
+      <workItem from="1681316333892" duration="10304000" />
+      <workItem from="1681534525498" duration="2850000" />
+      <workItem from="1681754259893" duration="93000" />
+      <workItem from="1684053939520" duration="7720000" />
+      <workItem from="1687618760420" duration="663000" />
+      <workItem from="1687619838277" duration="467000" />
+    </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1679785053718</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679785053719</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update">
+      <created>1679785119818</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679785119818</updated>
+    </task>
+    <task id="LOCAL-00003" summary="nice">
+      <created>1681469544180</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681469544180</updated>
+    </task>
+    <task id="LOCAL-00004" summary="nice">
+      <created>1681469575304</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681469575304</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update">
+      <created>1681470064337</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681470064337</updated>
+    </task>
+    <task id="LOCAL-00006" summary="serve iframe from https">
+      <created>1681470357577</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681470357577</updated>
+    </task>
+    <task id="LOCAL-00007" summary="validate if the requested path is from the log directories, changed class name">
+      <created>1681471173646</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681471173646</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update">
+      <created>1681535828298</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681535828298</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update">
+      <created>1681536048505</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681536048505</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update">
+      <created>1681536873731</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681536873731</updated>
+    </task>
+    <task id="LOCAL-00011" summary="improved UI&#10;added share option&#10;obfuscated query string">
+      <created>1684072260215</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684072260215</updated>
+    </task>
+    <task id="LOCAL-00012" summary="version 1.0.1">
+      <created>1684072301234</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684072301234</updated>
+    </task>
+    <task id="LOCAL-00013" summary="dont commit">
+      <created>1684072516697</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684072516697</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix">
+      <created>1684074777746</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1684074777746</updated>
+    </task>
+    <task id="LOCAL-00015" summary="bump version">
+      <created>1684074816889</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1684074816889</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update">
+      <created>1687618814280</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1687618814280</updated>
+    </task>
+    <task id="LOCAL-00017" summary="update">
+      <created>1687619854049</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1687619854049</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="nice" />
+    <MESSAGE value="serve iframe from https" />
+    <MESSAGE value="validate if the requested path is from the log directories, changed class name" />
+    <MESSAGE value="improved UI&#10;added share option&#10;obfuscated query string" />
+    <MESSAGE value="version 1.0.1" />
+    <MESSAGE value="dont commit" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="bump version" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+</project>

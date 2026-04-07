@@ -14,7 +14,7 @@
 class DotLogViewer {
       private $paths = [
           'test/logs',
-          'test/path-to-lumen-logs',
+          'test/storage',
       ];
       private $logs = [];
       private $file;

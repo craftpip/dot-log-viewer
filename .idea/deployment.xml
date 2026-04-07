@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="dotlogviewer" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="dotlogviewer">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/dot-log-viewer" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
